@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boho Tip Support</title>
+<meta name="description" content="Support and FAQ for Boho Tip — receipt scanning, Pro unlock, and troubleshooting.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f7f1e6;
+    --sand: #e8d3b3;
+    --terracotta: #b4694f;
+    --clay: #c77a58;
+    --sage: #8a9676;
+    --charcoal: #362e26;
+    --charcoal-soft: #6b5f52;
+    --rule: #e0cba9;
+    --card: #fffdf9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cream: #1c1712; --sand: #2b2219; --terracotta: #d68868; --clay: #c98a63;
+      --sage: #a3b18a; --charcoal: #f1e9dd; --charcoal-soft: #bdae9c; --rule: #3a2f24; --card: #241d16;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--cream); color: var(--charcoal);
+    font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.65; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 2rem 1.5rem 6rem; }
+  nav.top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; font-size: 0.9rem; }
+  nav.top a { color: var(--charcoal-soft); text-decoration: none; }
+  nav.top a:hover { color: var(--terracotta); }
+  nav.top .home { font-family: "Fraunces", Georgia, serif; font-weight: 600; color: var(--charcoal); }
+  header.hero { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.1rem; margin-bottom: 3rem; }
+  .arch { width: 76px; height: 76px; }
+  h1 {
+    font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: clamp(2rem, 5vw, 2.5rem);
+    margin: 0; color: var(--charcoal); text-wrap: balance;
+  }
+  .tagline { font-size: 1.02rem; color: var(--charcoal-soft); margin: 0; }
+  .card { background: var(--card); border: 1px solid var(--rule); border-radius: 20px; padding: 1.5rem 1.7rem; }
+  .contact-card { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
+  .contact-card p { margin: 0; color: var(--charcoal-soft); font-size: 0.95rem; }
+  .contact-card a.button {
+    display: inline-flex; align-items: center; gap: 0.5rem; background: var(--terracotta); color: #fffdf9;
+    text-decoration: none; padding: 0.7rem 1.3rem; border-radius: 999px; font-weight: 700; font-size: 0.92rem;
+    white-space: nowrap;
+  }
+  .contact-card a.button:hover { background: var(--clay); }
+  h2.section-title {
+    font-family: "Fraunces", Georgia, serif; font-weight: 600; color: var(--charcoal-soft);
+    text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.85rem; margin: 0 0 1.2rem;
+  }
+  details.faq { background: var(--card); border: 1px solid var(--rule); border-radius: 16px; padding: 1.1rem 1.4rem; margin-bottom: 0.8rem; }
+  details.faq summary {
+    font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 1.05rem; color: var(--charcoal);
+    cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  }
+  details.faq summary::-webkit-details-marker { display: none; }
+  details.faq summary::after { content: "+"; color: var(--terracotta); font-size: 1.4rem; font-weight: 400; flex-shrink: 0; transition: transform 0.2s ease; }
+  details.faq[open] summary::after { transform: rotate(45deg); }
+  details.faq p { margin: 0.8rem 0 0; color: var(--charcoal); }
+  details.faq p a { color: var(--terracotta); }
+  .faq-group { margin-bottom: 2.75rem; }
+  footer { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--rule); text-align: center; color: var(--charcoal-soft); font-size: 0.9rem; }
+  footer a { color: var(--terracotta); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="top">
+    <a class="home" href="index.html">Boho Tip</a>
+    <a href="privacy.html">Privacy Policy &rarr;</a>
+  </nav>
+
+  <header class="hero">
+    <svg class="arch" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M10 150 A90 90 0 0 1 190 150" fill="none" stroke="var(--terracotta)" stroke-width="16" stroke-linecap="round"/>
+      <path d="M35 150 A65 65 0 0 1 165 150" fill="none" stroke="var(--clay)" stroke-width="14" stroke-linecap="round"/>
+      <path d="M60 150 A40 40 0 0 1 140 150" fill="none" stroke="var(--sage)" stroke-width="14" stroke-linecap="round"/>
+    </svg>
+    <h1>Boho Tip Support</h1>
+    <p class="tagline">Questions, answers, and a real human on the other end.</p>
+  </header>
+
+  <div class="card contact-card">
+    <p>Can't find your answer below? We read every email.</p>
+    <a class="button" href="mailto:support@a2m4systems.com">✉️ support@a2m4systems.com</a>
+  </div>
+
+  <div class="faq-group">
+    <h2 class="section-title">Using the app</h2>
+
+    <details class="faq" open>
+      <summary>How does receipt scanning work?</summary>
+      <p>Tap "Scan receipt," take a photo or pick one from your library, and Boho Tip reads the total using Apple's on-device Vision framework. It looks for lines like "Total" or "Amount Due" and fills the bill field automatically. If it can't find one confidently, it'll say so — just enter the amount by hand.</p>
+    </details>
+
+    <details class="faq">
+      <summary>Is my receipt photo uploaded anywhere?</summary>
+      <p>No. Everything happens on your device — no servers, no accounts, no network calls. See the <a href="privacy.html">Privacy Policy</a> for the full picture.</p>
+    </details>
+
+    <details class="faq">
+      <summary>Why can't I scan a receipt on the Simulator?</summary>
+      <p>Camera access isn't available in Xcode's Simulator — this only affects testing, not real devices. On an actual iPhone, both camera and photo library work normally.</p>
+    </details>
+  </div>
+
+  <div class="faq-group">
+    <h2 class="section-title">Boho Tip Pro</h2>
+
+    <details class="faq">
+      <summary>What does the Pro unlock include?</summary>
+      <p>A one-time purchase (not a subscription) that unlocks: saved receipt history, CSV export for expense filing, and two extra color themes — Desert Sunset and Sage Meadow.</p>
+    </details>
+
+    <details class="faq">
+      <summary>How do I export my receipts?</summary>
+      <p>Open the history icon (top left of the calculator), tap the export icon in the top right, and share the CSV file anywhere — Files, Mail, AirDrop, or your expense software of choice.</p>
+    </details>
+
+    <details class="faq">
+      <summary>I purchased Pro but it's not unlocking — what do I do?</summary>
+      <p>Open the paywall (tap the history or theme icon) and tap "Restore Purchases." If that doesn't fix it, email us at <a href="mailto:support@a2m4systems.com">support@a2m4systems.com</a> with the email address on your Apple ID and we'll sort it out.</p>
+    </details>
+  </div>
+
+  <div class="faq-group">
+    <h2 class="section-title">Something's wrong</h2>
+
+    <details class="faq">
+      <summary>The app crashed or something looks broken</summary>
+      <p>Sorry about that — tell us what happened (what you tapped, what you expected, what happened instead) at <a href="mailto:support@a2m4systems.com">support@a2m4systems.com</a> and we'll take a look.</p>
+    </details>
+  </div>
+
+  <footer>
+    Boho Tip — a tip calculator, gently. &middot; <a href="mailto:support@a2m4systems.com">support@a2m4systems.com</a>
+  </footer>
+</div>
+</body>
+</html>
